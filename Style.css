@@ -1,0 +1,515 @@
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+}
+body{
+     background-color: rgb(255, 255, 255);
+}
+.main{
+     position: relative;
+     width: 100%;
+     /* height: 100%; */
+     max-height:100vh ;
+     box-sizing: border-box;
+}
+.nav .logo{
+     padding-left: 7vw;
+     height: 6vw;
+}
+
+.nav{
+     height: 6.5vw;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     border-bottom: 1.5px solid gray;
+}
+nav ul{
+     display: flex;
+     list-style: none;
+     justify-content: space-around;
+     padding: 3vw;
+     gap: 40px;
+     align-items: center;
+     padding-right: 8vw;
+}
+nav ul li{
+     font-size: 1.3vw;
+}
+nav ul li:hover{
+     color: gray;
+     font-weight: 600;
+}
+nav ul li a{
+     text-decoration: none;
+     color: black;
+}
+.nav button{
+     width: 4vw;
+     height: 1.8vw;
+     border-radius: 4px;
+     font-size: large;
+     font-weight: 500;
+     border: none;
+     background-color: lightseagreen;
+}
+.nav button:hover{
+     cursor: pointer;
+     background-color: orange;
+}
+.nav i{
+     font-size: 1.2vw;
+}
+.content{
+     /* height:calc(100%-7vw); */
+     /* height: calc(100vh- 25vh); */
+     max-height: 70vh;
+     width: 100%;
+     display: flex;
+}
+.left{
+     height: 100%;
+     width: 55%;
+     padding-left: 3vw;
+}
+.left h1{
+     padding-top: 2vw;
+     font-size: 5vw;
+     line-height:5vw ;
+}
+.left span{
+     color: lightseagreen;
+}
+.left p{
+     padding-top: 2.5vw;
+     font-size:1.5vw;
+     font-weight: 600;
+     color:black;
+}
+.left button{
+     font-size: x-large;
+     height: 3.5vw;
+     width: 10vw;
+     background-color: lightseagreen;
+     font-weight: 600;
+     margin-top: 3vw;
+     border: none;
+     margin-left: 15vw;
+     border-radius: 6px;
+
+}
+.left button:hover{
+     background-color: orange;
+     cursor: pointer;
+}
+
+.right{
+     width: 45%;
+     
+}
+.right img{
+     height: 100%;
+     padding-left: 10vw;
+}
+
+/* media query of the first section*/
+@media (max-width:600px) {
+     body{
+          background-color: rgb(255, 255, 255);
+     }
+     
+}
+
+
+@media (max-width:600px) {
+     
+     .nav{
+          padding: 0 6vw;
+          height: 60px;
+          background-color: rgb(152, 236, 236);
+     }
+     .logo img{
+          height: 14vw;
+          width: 12vw;
+          padding-top: 3vw;
+          margin-right: 4vw;
+     }
+     .nav ul{
+          display: none;
+     }
+     .nav i{
+          font-size: 7vw;
+          padding-top: 5vw;
+          display: block;
+
+     }
+     .content{
+          display: flex;
+          flex-direction: column;
+     }
+     .left{
+          height: 50%;
+          width: 100%;
+     }
+     .left h1{
+          font-size: 8vw;
+          line-height: 10vw;
+          padding: 2vw;
+          padding-top: 4vw;
+     }
+     .left p{
+          font-size: 4vw;
+          font-weight: 600;
+          padding: 3vw;
+          padding-top: 3vw;
+     }
+     .left button{
+          height: 8vw;
+          width: 20vw;
+          /* font-size: 2vw;
+          margin-right: 10vw; */
+          margin: auto;
+          display: flex;
+          font-size: 2vmax;
+          padding: 1vmax;
+          margin-top: 4vw;
+     }
+     .right img{
+          height: 70vw;
+          width: 60vw;
+          margin-left: 13vw;
+     }
+
+}
+
+@media screen and (min-width:600px){
+     .nav i{
+          display: none;
+     }
+}
+
+/* courses */
+/* css code for the second section */
+
+.separation{
+     height: 0.5vh;
+     margin-top: 4vw;
+     width: 100%;
+     background-color:gray ;
+}
+
+.courses{
+     display: grid;
+     grid-template-columns:repeat(3,1fr) ;
+}
+
+.info h1{
+     margin-top: 2.5vw;
+     font-size: 6vw;
+     justify-content: center;
+     text-align: center;
+}
+
+.info p{
+     margin: 2vw 3.5vw;
+     font-size: 2vw;
+     font-weight: 600;
+}
+
+.courses{
+     padding: 2vw;
+     gap: 3.5vw;
+     margin-left: 9vw;
+}
+.fee{
+     font-size: 1vw;
+     padding: 10px;
+     padding-left: 3vw;
+
+}
+.courses .first img{
+     height: 12vw;
+     width: 15vw;
+     border: 1px solid black;
+     border-radius: 8px;
+     box-shadow: 1px 2px 2px gray;
+     padding: 8px;
+     
+}
+
+.first button{
+     height: 2.2vw;
+     width: 5.5vw;
+     background-color: lightseagreen;
+     font-size: large;
+     border: none;
+     border-radius: 3px;
+     margin: 7px;
+     margin-left: 2vw;
+}
+
+.first button:hover{
+     background-color: orange;
+     cursor: pointer;
+}
+/* media query of the second section.. */
+
+@media (max-width:600px){
+     .separation{
+          height: 0.2vh;
+          margin-top: 4vw;
+          width: 100%;
+          background-color:gray ;
+     }
+     .courses{
+          display: grid;
+          grid-template-columns:repeat(2,1fr) ;
+     }
+     .info h1{
+          font-size: 6vw;
+     }
+     .info p{
+          font-size: 4vw;
+          text-align: center;
+          font-weight: 600;
+     }
+     .fee h3{
+          font-size: 3vw;
+          padding: 0.5px;
+     }
+     .courses .first img{
+          height: 20vw;
+          width: 22vw;
+          border: 1px solid black;
+          border-radius: 4px;
+          box-shadow: 1px 2px 2px gray;
+          padding: 4px;
+          margin-left: 2vw;
+          
+     }
+     
+     .first button{
+          height: 5.5vw;
+          width: 13vw;
+          background-color: lightseagreen;
+          font-size: 2vw;
+          border: none;
+          border-radius: 3px;
+          margin: 7px;
+          margin-left: 3vw;
+     }
+}
+
+
+/* from here the css of the third section starts.. */
+
+.heading3{
+     font-size: 2.2vw;
+     justify-content: center;
+     padding: 9px;
+     text-align: center;
+     padding-top: 2.3vw;
+}
+.third{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     margin-left: 10vw;
+     gap: 4vw;
+     margin-top: 3vw;
+     
+}
+.first3{
+     display: flex;
+}
+.first3 img{
+     height: 20vw;
+     width: 22vw;
+     border: 1px solid black;
+     border-radius: 8px;
+     box-shadow: 1px 2px 2px gray;
+     padding: 8px;
+}
+
+.info3{
+     margin-top: 5vw;
+     margin-left: 2vw;
+}
+.info3 h3{
+     font-size: 1.3vw;
+     padding: 0.1vw;
+}
+
+.info3 button{
+     height: 2.2vw;
+     width: 5.5vw;
+     background-color: lightseagreen;
+     font-size: large;
+     border: none;
+     border-radius: 3px;
+     margin: 7px;
+     margin-left: 3vw;
+}
+
+.info3 button:hover{
+     background-color: orange;
+     cursor: pointer;
+}
+
+/* media query of third section */
+@media(max-width:600px){
+     .heading3{
+          font-size: 2.5vw;
+     }
+     .info3 button{
+          height: 3.5vw;
+          width: 7vw;
+          font-size: 1.4vw;
+     }
+     .third{
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+     }
+     .first3 img{
+          height: 45vw;
+          width: 45vw;
+          border: 1px solid black;
+          border-radius: 8px;
+          box-shadow: 1px 2px 2px gray;
+          padding: 5px;
+     }
+     .info3{
+          margin-top: 5vw;
+          margin-left: 2vw;
+     }
+     .info3 h3{
+          font-size: 3.5vw;
+          padding: 1vw;
+     }
+     
+     .info3 button{
+          height: 5.5vw;
+          width: 11vw;
+          background-color: lightseagreen;
+          font-size: 2vw;
+          border: none;
+          border-radius: 3px;
+          margin: 7px;
+          margin-left: 6vw;
+     }
+     
+}
+
+/* CSS fourth section */
+
+.heading4{
+     font-size: 2.2vw;
+     justify-content: center;
+     padding: 9px;
+     text-align: center;
+     padding-top: 2.3vw;
+     font-weight: 600;
+}
+.fourth{
+     padding-top: 2vw;
+     display: flex;
+     flex-direction: column;
+     place-items: center;
+}
+.box-one{
+     height: 8vh;
+     width: 70vw;
+     background-color: rgb(176, 170, 170);
+     color:black;
+     font-weight: 600;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 1vmax;
+     font-size: 1.8rem;
+     text-align: center;
+     margin: 7px 0px;
+}
+.box-one svg{
+     height: 2vw;
+     width: 3vw;
+     
+}
+.box-one:hover{
+     background-color: rgb(91, 206, 168);
+}
+
+/* media query of the fourth section */
+@media (max-width:600px) {
+     .heading4{
+          font-size: 4vw;
+          font-weight: 700;
+     }
+     .box-one{
+          font-size: 2.5vw;
+          height: 5vw;
+          width: 80%;
+     }
+}
+
+/* from here the fifth section starts */
+
+.logo{
+     margin-left: 4vw;
+}
+.head6 h1{
+     font-size: 2vw;
+     font-family: sans-serif;
+     padding-top: 4vh;
+     font-family: sans-serif;
+     padding-left: 4vw;
+}
+.head6 h1:hover{
+     color: red;
+}
+.right5{
+     display: flex;
+     gap: 10vw;
+     margin: 4vw;
+}
+
+.right5 .box a{
+     text-decoration: none;
+     font-size: x-large;
+     padding: 14px;
+     color: black;
+     font-weight: 600;
+}
+.right5 .box a:hover{
+     color: red;
+}
+.right5 img{
+     margin-top: 20px;
+     transition: transform 0.5sec ease;
+}
+
+.right5 img:hover{
+     transform: scale(1.5);
+     cursor: pointer;
+}
+
+/* media query of fifth or the last section */
+
+@media (max-width:600px){
+     .head6 h1{
+          font-size: 6vw;
+          padding: 3vw 3vw;
+     }
+     .right5{
+          display:grid;
+          grid-template-columns: repeat(2,1fr);
+     }
+     .box img{
+          width: 4vw;
+          height: 4vw;
+     }
+     .right5 .box a{
+          font-size: 5vw;
+     }
+}
